@@ -1,0 +1,12 @@
+<h1>Skill assessment: <strong>accessibility</strong></h1>
+<span>{{ numQuestionsRemaining }} questions remaining</span>
+<h2>{{ question }}</h2>
+
+<ul>
+  <li *ngFor="let answer of answers; let i = index">
+    <button mat-stroked-button color="primary">{{ answer }}</button>
+  </li>
+  <li>
+    <button mat-stroked-button color="accent">I don't know yet</button>
+  </li>
+</ul>
